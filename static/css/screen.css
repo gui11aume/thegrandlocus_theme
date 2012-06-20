@@ -116,6 +116,18 @@ h2 {
 }
 
 /* Table highlight */
-tr.highlight {
-  background-color: #e8e8e8;
+tr.odd {
+  background-color: white;
+}
+
+tr.even {
+  background-color: #f0f0f0;
+}
+
+tr.highlight_odd {
+  background-color: #c8c8c8;
+}
+
+tr.highlight_even {
+  background-color: #c0c0c0;
 }
