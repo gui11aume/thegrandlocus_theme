@@ -1,0 +1,11 @@
+.author_name {
+  color: #f00;
+}
+
+.user_comment {
+  width: 90%;
+}
+
+textarea.comment_box {
+  width: 90%;
+}
