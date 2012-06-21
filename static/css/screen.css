@@ -115,6 +115,17 @@ h2 {
   padding-bottom: 4px;
 }
 
+/* Tables */
+th {
+  font-weight: bold;
+  font-size: 120%;
+  background-color: #a8a8a8;
+}
+
+td {
+  text-align: center;
+}
+
 /* Table highlight */
 tr.odd {
   background-color: white;

@@ -23,7 +23,14 @@ td > h3:first-child {
   color: #f00;
 }
 
+/* Tables */
+table.reaction_mix {
+  width: 50%;
+}
+
+
 /* Tag cloud */
+
 .tagCloud {
   background: white
 }

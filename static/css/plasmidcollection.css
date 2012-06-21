@@ -4,16 +4,6 @@
   margin-right:auto;
 }
 
-#prep_list th {
-  font-weight: bold;
-  font-size: 120%;
-  background-color: #a8a8a8;
-}
-
-#prep_list td {
-  text-align: center;
-}
-
 #new td, .input {
   width: 100%;
 }
