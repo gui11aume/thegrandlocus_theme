@@ -2,6 +2,18 @@ h4 {
   color: #f00;
 }
 
+table.colleague td {
+  text-align: left;
+  vertical-align: top;
+  padding: 30px;
+}
+
+table.colleague td > h3:first-child {
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #f00;
+}
+
 .out_part {
   background-color: #d0d0d0;
   padding-left: 5px;
@@ -9,12 +21,17 @@ h4 {
 }
 
 .optimized {
+  font-weight: bold;
   color: #f00;
 }
 
 /* Tables */
 table.reaction_mix {
   width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Tag cloud */

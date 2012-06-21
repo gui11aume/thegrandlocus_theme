@@ -128,11 +128,11 @@ td {
 
 /* Table highlight */
 tr.odd {
-  background-color: white;
+  background-color: #d8d8d8;
 }
 
 tr.even {
-  background-color: #d8d8d8;
+  background-color: white;
 }
 
 tr.highlight {
