@@ -51,13 +51,9 @@ function format_theme_style() {
   );
 
   // Table hover highlight.
-  $("tr.odd").hover(
-      function() { $(this).addClass("highlight_odd"); },
-      function() { $(this).removeClass("highlight_odd"); }
-  );
-  $("tr.even").hover(
-      function() { $(this).addClass("highlight_even"); },
-      function() { $(this).removeClass("highlight_even"); }
+  $("tr._highlight").hover(
+      function() { $(this).addClass("highlight"); },
+      function() { $(this).removeClass("highlight"); }
   );
 }
 

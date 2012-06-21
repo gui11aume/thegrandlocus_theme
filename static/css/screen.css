@@ -121,13 +121,9 @@ tr.odd {
 }
 
 tr.even {
-  background-color: #f0f0f0;
+  background-color: #d8d8d8;
 }
 
-tr.highlight_odd {
-  background-color: #c8c8c8;
-}
-
-tr.highlight_even {
-  background-color: #c0c0c0;
+tr.highlight {
+  background-color: #b8b8b8;
 }
