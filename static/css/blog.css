@@ -6,6 +6,13 @@
   left: 25px;
 }
 
+/* Styling for admin tables */
+#admin_posttable, #admin_imagetable {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Styling for admin form */
 
 #edit {
