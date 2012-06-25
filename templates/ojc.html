@@ -1,13 +1,19 @@
 {% extends "lab.html" %}
+
+{% block description %}
+    <meta name="description"
+        content="The online literature discussion of the Filion lab - upload and discuss scientific articles" />
+{% endblock %}
+
 {% block title %}Open Journal Club | The Grand Locus{% endblock %}
+
 {% block head %}
     <link rel="stylesheet" type="text/css" media="screen"
 	  href="/thegrandlocus_theme/static/css/ojc.css" />
-
-    <script>$(document).ready(format_theme_style)</script>
 {% endblock %}
+
 {% block slogan %}The Open Journal Club{% endblock %}
-{% block social_networks %}{% endblock %}
+
 {% block section %}
         <div id="section" title="#more"></div>
 {% endblock %}

@@ -1,14 +1,23 @@
 {% extends "base.html" %}
-{% block title %}Filion Lab | The Grand Locus{% endblock %}
-{% block head %}
-  <link rel="stylesheet" type="text/css" media="screen"
-    href="/thegrandlocus_theme/static/css/gal.css" />
 
-  <script>$(document).ready(format_theme_style)</script>
-  <meta name="description" content="The Filion lab - bioinformatics & molecular biology laboratory in Barcelona" />
+{% block description %}
+  <meta name="description"
+      content="The Filion lab - bioinformatics & molecular biology laboratory in Barcelona" />
 {% endblock %}
+
+{% block title %}Filion Lab | The Grand Locus{% endblock %}
+
+{% block head %}
+
+  <!-- extra css -->
+  <link rel="stylesheet" type="text/css" media="screen"
+      href="/thegrandlocus_theme/static/css/gal.css" />
+{% endblock %}
+
 {% block slogan %}Genome Architecture Lab{% endblock %}
+
 {% block social_networks %}{% endblock %}
+
 {% block section %}
         <div id="section" title="#thelab"></div>
 {% endblock %}

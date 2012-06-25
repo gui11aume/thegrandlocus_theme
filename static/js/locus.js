@@ -1,15 +1,3 @@
-function format_blog_style() {
-  $('pre').addClass('prettyprint');
-  prettyPrint();
-  if (there_are_hard_parts()) {
-    initialize_hard_parts_display();
-  }
-  else {
-    $('#hard_parts_info').replaceWith('<br/>');
-  }
-  format_theme_style();
-}
-
 function there_are_hard_parts() {
   return $('.hard').length > 0;
 }
@@ -33,6 +21,16 @@ function initialize_hard_parts_display() {
 }
 
 function format_theme_style() {
+  // Prettyprint
+  $('pre').addClass('prettyprint');
+  prettyPrint();
+  if (there_are_hard_parts()) {
+    initialize_hard_parts_display();
+  }
+  else {
+    $('#hard_parts_info').replaceWith('<br/>');
+  }
+
   // White dots on the right navigation panel.
   // Get the section we're in. Append a white dot next to the link.
   var section = $('#section').attr("title");
