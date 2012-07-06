@@ -15,14 +15,15 @@ table.colleague td > h3:first-child {
 }
 
 .out_part {
-  background-color: #d0d0d0;
+  background-color: #ddd;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .optimized {
-  font-weight: bold;
   color: #f00;
+  font-weight: bold;
+  background-color: #ddd;
 }
 
 /* Tables */

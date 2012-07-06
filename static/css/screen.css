@@ -1,8 +1,28 @@
 html, body {
   font-family:Times, serif;
+  color: #444;
   background-color: white;
   margin: 0px;
   font-size: 13pt;
+}
+
+h2 {
+  font-size: 24pt;
+  text-align: center;
+  color: #f00;
+}
+
+h3 {
+  color: black;
+}
+
+h4 {
+  color: #f00;
+}
+
+.bf_separator {
+  color: black;
+  text-align: center;
 }
 
 .centered {
@@ -36,12 +56,6 @@ a.big_link {
 
 a.small_link {
   font-size: 18pt;
-}
-
-h2 {
-  font-size: 24pt;
-  text-align: center;
-  color: #f00;
 }
 
 #blog_name {
@@ -117,6 +131,7 @@ h2 {
 
 /* Tables */
 th {
+  color: black;
   font-weight: bold;
   font-size: 120%;
   background-color: #a8a8a8;
