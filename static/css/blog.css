@@ -75,6 +75,7 @@
 
 blockquote {
   padding: 4px;
+  color: black;
   font-style: italic;
   background-image: url(http://blog.thegrandlocus.com/img/quote.png);
   background-position: top left;
@@ -88,3 +89,9 @@ blockquote div:first-child {
   background-position: bottom right;
   background-repeat: no-repeat;
 } 
+
+code {
+  color: black;
+  font-size: 11pt;
+  background-color: #f0f0f0;
+}
