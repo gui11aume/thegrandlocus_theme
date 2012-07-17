@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" media="screen"
         href="/thegrandlocus_theme/static/css/screen.css" />
 
-    <!-- extra css -->
+    <!-- extra css and others -->
     {% block head %}
     {% endblock %}
 
@@ -38,6 +38,9 @@
     <script type="text/javascript">
       $(document).ready(format_theme_style);
     </script>
+
+    {% block google-analytics %}
+    {% endblock %}
 
   </head>
 
