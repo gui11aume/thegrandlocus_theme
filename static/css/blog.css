@@ -36,6 +36,24 @@
   width: 100%;
 }
 
+/* List formatting */
+
+#ul_archive {
+  list-style-type: none;
+  marign-left: 0em;
+  padding-left: 0em;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#ul_archive ul {
+  list-style-type: none;
+  margin-top:0.5em;
+  marign-left: 0em;
+  padding-left: 0em;
+  font-size: x-large;
+}
+
 /* Post formatting. */
 
 .post-info {

@@ -22,12 +22,16 @@
     </span>
     <br/>
   {% endfor %}
+
+  <p id="prev_next">
   {% if prev_page %}
-    <a id="prev" href="{{config.url_prefix}}{{prev_page}}">Newer</a>
+    <a id="prev" href="{{config.url_prefix}}{{prev_page}}">&lt; Newer</a>
   {% endif %}
+  {% if prev and next %} | {% endif %}
   {% if next_page %}
-    <a id="next" href="{{config.url_prefix}}{{next_page}}">Older</a>
+    <a id="next" href="{{config.url_prefix}}{{next_page}}">Older &gt;</a>
   {% endif %}
+  </p>
 
   {% if config.disqus_forum %}
     <script type="text/javascript">
