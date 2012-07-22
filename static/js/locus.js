@@ -9,7 +9,7 @@ function initialize_hard_parts_display() {
 	  insertBefore('.hard');
   // Register qTip event handler.
   $('.folded_hard_part').qtip(
-    { content: 'Click to unfold technical part.' }
+    { content: 'Click to unfold technical part' }
   );
   // Register click event handler.
   $('.folded_hard_part').click(function() {
@@ -56,7 +56,7 @@ function format_theme_style() {
 
   // qTip event handler on RSS
   $('#rssicon').qtip(
-    { content: 'Link to RSS feeds of the blog.' }
+    { content: 'Link to RSS feeds of the blog' }
   );
 
 }
