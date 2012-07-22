@@ -53,6 +53,12 @@ function format_theme_style() {
       function() { $(this).addClass("highlight"); },
       function() { $(this).removeClass("highlight"); }
   );
+
+  // qTip event handler on RSS
+  $('#rssicon').qtip(
+    { content: 'Link to RSS feeds of the blog.' }
+  );
+
 }
 
 
