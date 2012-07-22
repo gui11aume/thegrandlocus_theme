@@ -2,6 +2,28 @@
 
 {% block title %}{{post.title|escape}} | The Grand Locus{% endblock %}
 
+{% block description %}
+    <meta name="description"
+        content="Guillaume Filion's blog | Post of {{post.published_tz|date:config.date_format}} '{{post.title|escape}}'{% if post.tags %}, filed under {% for tag in post.tag_pairs %} {{tag.0|escape}}{% if not forloop.last %},{% endif %} {% endfor %} {% endif %}" />
+    <meta name="google-site-verification" content="WSYOkQj9p1xQC75jyd5iFQLtd8Q1X-EpoH56yBup9vc" />
+{% endblock %}
+
+{% block social_networks %}
+      <div id="social_networks">
+        <a href="/feeds/atom.xml"><img src="/img/rss.png"></a><br/>
+        <g:plusone size="standard"></g:plusone>
+      </div>
+      <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script');
+        po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+      })();
+      </script>
+{% endblock %}
+
 {% block body %}
   <p id="hard_parts_info">This post contains <img src="/img/moebius.png" height="16" width="16"> technical parts.
   </p>
@@ -15,9 +37,21 @@
 
     <br/>
     <br/>
-     Posted by {{config.author_name}}
+     
+    <div class="g-plus" data-height="69" data-href="//plus.google.com/102441667247494916086?rel=author"></div>
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
       {% if post.tags %}
-        | Filed under
+        <br/>
+        Filed under
         {% for tag in post.tag_pairs %}
           <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
         {% endfor %}
