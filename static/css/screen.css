@@ -44,6 +44,9 @@ h2 a.silent_link {
   text-decoration: none;
 }
 
+h2 a.dark_link:link { color: #f00; }
+h2 a.dark_link:hover { color: #c00; text-decoration: none; }
+
 a.navigation_link {
   text-decoration: none;
   color: white;

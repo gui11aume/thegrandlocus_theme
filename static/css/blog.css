@@ -1,5 +1,4 @@
 /* Social networks and RSS */
-
 #social_networks {
   position: absolute;
   margin-top: 40px;
@@ -14,7 +13,6 @@
 }
 
 /* Styling for admin form */
-
 #edit {
   width: 100%;
 }
@@ -37,7 +35,6 @@
 }
 
 /* List formatting */
-
 #ul_archive {
   list-style-type: none;
   marign-left: 0em;
@@ -55,7 +52,6 @@
 }
 
 /* Post formatting. */
-
 .post-info {
   text-align: center;
 }
@@ -63,6 +59,7 @@
 .date {
   font-size: 14pt;
   font-style: italic;
+  color: black;
 }
 
 .post-format, .readmore {

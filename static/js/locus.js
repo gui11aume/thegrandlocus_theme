@@ -80,7 +80,8 @@ function format_theme_style() {
           width: 0,
           color: 'black'
         }
-      }
+      },
+      show: { delay: 0 }
     }
   );
 
