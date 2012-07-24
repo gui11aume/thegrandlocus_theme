@@ -92,10 +92,9 @@ blockquote {
   margin: 30px;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: black;
-  background-color: #eee;
   border-top-style: solid;
   border-bottom-style: solid;
   border-left-style: none;
@@ -104,7 +103,7 @@ blockquote {
   border-color: #ddd;
   font-style: italic;
   background-image: url(http://blog.thegrandlocus.com/img/quote.png);
-  background-position: 30px 5px;
+  background-position: 10px 5px;
   background-repeat: no-repeat;
   text-indent: 2em;
 }
