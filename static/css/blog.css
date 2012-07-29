@@ -40,7 +40,6 @@
   marign-left: 0em;
   padding-left: 0em;
   text-align: center;
-  font-size: xx-large;
 }
 
 #ul_archive ul {
@@ -58,6 +57,12 @@
 
 .date {
   font-size: 14pt;
+  font-style: italic;
+  color: black;
+}
+
+.year {
+  font-size: xx-large;
   font-style: italic;
   color: black;
 }
