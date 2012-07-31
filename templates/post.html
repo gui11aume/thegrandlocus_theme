@@ -3,6 +3,7 @@
 {% block title %}{{post.title|escape}} | The Grand Locus{% endblock %}
 
 {% block description %}
+    <meta name="robots" content="noarchive">
     <meta name="description"
         content="Guillaume Filion's blog | Post of {{post.published_tz|date:config.date_format}} '{{post.title|escape}}'{% if post.tags %}, filed under {% for tag in post.tag_pairs %} {{tag.0|escape}}{% if not forloop.last %},{% endif %} {% endfor %} {% endif %}" />
     <meta name="google-site-verification" content="WSYOkQj9p1xQC75jyd5iFQLtd8Q1X-EpoH56yBup9vc" />
