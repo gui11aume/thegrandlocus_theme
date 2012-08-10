@@ -7,10 +7,16 @@ for (i = 0 ; i < title.length ; i++) {
 }
 $('.moving_letter').css({
   'position': 'absolute',
+  'font-family': $('#post_title').css('font-family'),
+  'font-size': $('#post_title').css('font-size'),
+  'font-weight': $('#post_title').css('font-weight'),
+  'color': $('#post_title').css('color')
+  /*
   'font-family': function () { return $('#post_title').css('font-family'); },
   'font-size': function () { return $('#post_title').css('font-size'); },
   'font-weight': function () { return $('#post_title').css('font-weight'); },
   'color': function () { return $('#post_title').css('color'); }
+  */
 });
 _width = $('.moving_letter').map(function() {
   return $(this).width();
@@ -38,4 +44,5 @@ function changePosition() {
   });
 }
 
-window.setInterval("changePosition()", 20);
+// Wait 5 seconds.
+setTimeout(function() { window.setInterval("changePosition()", 20); },5000);
