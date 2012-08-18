@@ -81,7 +81,10 @@ function format_theme_style() {
           color: 'black'
         }
       },
-      show: { delay: 0 }
+      show: {
+        delay: 0,
+        effect: { type: 'grow' }
+      }
     }
   );
 
