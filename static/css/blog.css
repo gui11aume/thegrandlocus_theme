@@ -80,6 +80,7 @@
 .hard, .hard_format {
   padding: 8px;
   background-color: #d0d0d0;
+  color: 'black';
 }
 
 #prev_next {

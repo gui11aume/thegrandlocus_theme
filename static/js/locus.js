@@ -9,14 +9,21 @@ function initialize_hard_parts_display() {
 	  insertBefore('.hard');
   // Register qTip event handler.
   $('.folded_hard_part').qtip(
-    { content: 'Click to unfold technical part',
+    { id: 'penrose',
+      prerender: true,
+      content: 'Click to unfold technical part',
+      position: {
+        my: 'left center',
+        at: 'right center'
+      },
+      show: {
+        effect: function(offset) {$(this).show(100); }
+      },
+      hide: {
+        event: 'click mouseleave'
+      },
       style: {
-        background: 'black',
-        color: 'white',
-        border: {
-          width: 0,
-          color: 'black'
-        }
+        classes: 'ui-tooltip-bootstrap ui-tooltip-shadow'
       }
     }
   );
@@ -65,25 +72,18 @@ function format_theme_style() {
 
   // qTip event handler on RSS
   $('#rssicon').qtip(
-    { content: 'Link to RSS feeds of the blog',
+    { id: 'rss', /* #ui-tooltip-rss */
+      prerender: true,
+      content: 'Link to RSS feeds of the blog',
       position: {
-        corner: {
-          target: 'rightMiddle',
-          tooltip: 'leftMiddle'
-        }
+        my: 'left center',
+        at: 'right center'
       },
       style: {
-        tip: { corner: 'leftMiddle', color: 'black' },
-        background: 'black',
-        color: 'white',
-        border: {
-          width: 0,
-          color: 'black'
-        }
+        classes: 'ui-tooltip-bootstrap ui-tooltip-shadow'
       },
       show: {
-        delay: 0,
-        effect: { type: 'grow' }
+        effect: function(offset) {$(this).show(100); }
       }
     }
   );
