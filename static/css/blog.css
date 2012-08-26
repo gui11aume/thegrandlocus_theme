@@ -79,8 +79,11 @@
 
 .hard, .hard_format {
   padding: 8px;
-  background-color: #d0d0d0;
+  background-color: #ddd;
   color: 'black';
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
 }
 
 #prev_next {
@@ -100,25 +103,72 @@ blockquote {
   padding-left: 30px;
   padding-right: 30px;
   color: black;
-  border-width: 1px;
-  border-color: #ddd;
   font-style: italic;
   background-image: url(http://blog.thegrandlocus.com/img/quote.png);
   background-position: left 8px;
   background-repeat: no-repeat;
 }
 
-/*
-blockquote div:first-child {
-  display: block;
-  background-image: url(http://blog.thegrandlocus.com/img/reversequote.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-} 
-*/
-
 code {
   color: black;
   font-size: 11pt;
   background-color: #f0f0f0;
 }
+
+/* prettyprint */
+pre.prettyprint{
+  padding: 7px;
+  font-size:11pt;
+  background-color:#f0f0f0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+}
+
+.str{
+  /*color:#080;*/
+  color: #c00;
+}
+
+.kwd{
+  /*color:#008;*/
+  font-weight: bold;
+}
+
+.com{
+  /*color:#800;*/
+  color: #a8a8a8;
+}
+
+.typ{
+  /*color:#606;*/
+}
+
+.lit{
+  /*color:#066*/
+}
+
+.pun{
+  /*color:#660*/
+}
+
+.pln{
+  color:#000
+}
+
+.tag{
+  color:#008
+}
+
+.atn{
+  color:#606
+}
+
+.atv{
+  color:#080
+}
+
+.dec{
+  color:#606
+}
+
