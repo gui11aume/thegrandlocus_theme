@@ -132,15 +132,15 @@ span.s, span.kc{
   color: #c00;
 }
 
-span.kn, span.kr{
+span.kn{
   font-weight: bold;
   color: #c00;
 }
 
-span.k{
+span.k, span.kr{
   font-weight: bold;
 }
 
 span.c, span.c1{
-  color: #a8a8a8;
+  color: #a0a0a0;
 }
