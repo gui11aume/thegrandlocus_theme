@@ -37,9 +37,6 @@ function initialize_hard_parts_display() {
 }
 
 function format_theme_style() {
-  // Prettyprint
-  $('pre').addClass('prettyprint');
-  prettyPrint();
   if (there_are_hard_parts()) {
     initialize_hard_parts_display();
   }

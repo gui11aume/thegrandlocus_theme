@@ -78,7 +78,8 @@
 }
 
 .hard, .hard_format {
-  padding: 8px;
+  display: block;
+  padding: 16px;
   background-color: #ddd;
   color: black;
   border-style: solid;
@@ -116,8 +117,10 @@ code {
 }
 
 /* prettyprint */
-pre.prettyprint{
-  padding: 7px;
+div.highlight{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
   font-size:11pt;
   background-color:#f0f0f0;
   border-style: solid;
@@ -125,50 +128,19 @@ pre.prettyprint{
   border-color: #aaa;
 }
 
-.str{
-  /*color:#080;*/
+span.s, span.kc{
   color: #c00;
 }
 
-.kwd{
-  /*color:#008;*/
+span.kn, span.kr{
+  font-weight: bold;
+  color: #c00;
+}
+
+span.k{
   font-weight: bold;
 }
 
-.com{
-  /*color:#800;*/
+span.c, span.c1{
   color: #a8a8a8;
 }
-
-.typ{
-  /*color:#606;*/
-}
-
-.lit{
-  /*color:#066*/
-}
-
-.pun{
-  /*color:#660*/
-}
-
-.pln{
-  color:#000
-}
-
-.tag{
-  color:#008
-}
-
-.atn{
-  color:#606
-}
-
-.atv{
-  color:#080
-}
-
-.dec{
-  color:#606
-}
-
