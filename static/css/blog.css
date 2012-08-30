@@ -78,6 +78,10 @@
 }
 
 .hard, .hard_format {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
   display: block;
   padding: 16px;
   background-color: #ddd;
@@ -85,6 +89,7 @@
   border-style: solid;
   border-width: 1px;
   border-color: #aaa;
+  box-shadow: 8px 8px 15px #777;
 }
 
 #prev_next {
