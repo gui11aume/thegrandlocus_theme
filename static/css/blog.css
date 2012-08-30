@@ -103,9 +103,9 @@ blockquote {
   padding-bottom: 7px;
   padding-left: 30px;
   padding-right: 30px;
-  color: black;
+  color: #380000;
   font-style: italic;
-  background-image: url(http://blog.thegrandlocus.com/img/quote.png);
+  background-image: url(http://blog.thegrandlocus.com/thegrandlocus_theme/static/images/quote.png);
   background-position: left 8px;
   background-repeat: no-repeat;
 }

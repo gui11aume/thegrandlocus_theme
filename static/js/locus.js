@@ -4,7 +4,7 @@ function there_are_hard_parts() {
 
 function initialize_hard_parts_display() {
   // Create and insert the image.
-  $('<img class="folded_hard_part centered" src="/img/moebius.png">').
+  $('<img class="folded_hard_part centered" src="/thegrandlocus_theme/static/images/penrose.png">').
 	  clone().
 	  insertBefore('.hard');
   // Register qTip event handler.
