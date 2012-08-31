@@ -10,18 +10,10 @@
 {% endblock %}
 
 {% block social_networks %}
-      <div id="social_networks">
-        <g:plusone size="standard"></g:plusone>
-      </div>
-      <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script');
-        po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
-      })();
-      </script>
+<script>
+var options={ "publisher": "a67d96b7-659d-4fd2-9f42-c10c916e1fa7", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["googleplus", "facebook", "twitter"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
 {% endblock %}
 
 {% block body %}
