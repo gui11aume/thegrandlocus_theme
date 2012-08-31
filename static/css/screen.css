@@ -31,6 +31,11 @@ h4 {
   margin-right: auto;
 }
 
+.ontheleft {
+  float: left;
+  margin-right: 20px;
+}
+
 a:link { color: #f00; text-decoration: none; }
 a:visited {color: #f00; text-decoration: none; }
 a:hover { text-decoration: underline; }
