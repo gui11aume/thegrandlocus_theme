@@ -29,8 +29,8 @@ function initialize_hard_parts_display() {
   );
   // Register click event handler.
   $('.folded_hard_part').click(function() {
+    $(this).next().fadeIn();
     $(this).hide();
-    $(this).next().show(300);
   });
   // Hide the hard parts.
   $('.hard').hide();
