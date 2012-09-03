@@ -7,9 +7,28 @@
 
 /* Social networks and RSS */
 #social_networks {
-  position: absolute;
-  margin-top: 40px;
-  left: 25px;
+  position: fixed;
+  top: 200px;
+  left: 10px;
+}
+
+#plusone {
+  position: fixed;
+  top: 200px;
+  left:10px;
+  margin-top:30px;
+}
+
+#like {
+  position: fixed;
+  top: 255px;
+  left: 10px;
+}
+
+#tweet {
+  position: fixed;
+  top: 280px;
+  left: 10px;
 }
 
 /* Styling for admin tables */
