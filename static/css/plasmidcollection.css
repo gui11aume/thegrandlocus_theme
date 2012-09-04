@@ -1,7 +1,11 @@
-#prep_list {
+.listing {
   width: 70%;
   margin-left:auto;
   margin-right:auto;
+}
+
+.hand_pointer:hover {
+  cursor: pointer;
 }
 
 #new td, .input {
