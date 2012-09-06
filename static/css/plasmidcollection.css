@@ -41,3 +41,23 @@ ul.errorlist, .error {
   font-size: 12px;
   font-family: monospace;
 }
+
+.ftype_gene {
+  color: white;
+  background-color: RoyalBlue;
+}
+
+.ftype_promoter {
+  color: white;
+  background-color: Brown;
+}
+
+.ftype_origin {
+  color: white;
+  background-color: DarkSeaGreen;
+}
+
+.ftype_other {
+  color: white;
+  background-color: Indigo;
+}
