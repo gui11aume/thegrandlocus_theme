@@ -30,7 +30,13 @@ ul.errorlist, .error {
 }
 
 #feature_table {
-  width: 80%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#newfeature_table {
+  width: 185px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,4 +66,8 @@ ul.errorlist, .error {
 .ftype_other {
   color: white;
   background-color: Indigo;
+}
+
+.edit {
+  display: none;
 }
