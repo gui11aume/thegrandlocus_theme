@@ -12,6 +12,32 @@
   width: 100%;
 }
 
-#seq, #comments, #features {
+#seq, #comments, {
   height: 40px;
+}
+
+ul.errorlist, .error {
+  list-style-type: none;
+  text-align: center;
+  color: #f00;
+  font-weight: bold;
+}
+
+#graph_container {
+  width:320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#feature_table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#full_sequence {
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 12px;
+  font-family: monospace;
 }
