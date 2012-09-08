@@ -90,3 +90,15 @@ g.beginPath();
   g.fillStyle = "#FFFFFF";
   g.fill();
 }
+
+function select_sequence(start, end) {
+  // Side effect function to set sequence selection to 'start', 'end'.
+  var range = document.createRange();
+  range.setStart(
+        document.getElementById('full_sequence').firstChild, start);
+  range.setEnd(
+        document.getElementById('full_sequence').firstChild, end);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+}
