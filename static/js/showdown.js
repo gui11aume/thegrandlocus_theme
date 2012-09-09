@@ -1,3 +1,6 @@
+// Guillaume Filion note: this is not the original file written by
+// John Fraser. I commented out the lines that prevented inter-
+// pretation of the block tags, so that interpretation is throughout.
 //
 // showdown.js -- A javascript port of Markdown.
 //
@@ -211,8 +214,15 @@ var _HashHTMLBlocks = function(text) {
 	// "paragraphs" that are wrapped in non-block-level tags, such as anchors,
 	// phrase emphasis, and spans. The list of tags we're looking for is
 	// hard-coded:
-	var block_tags_a = "p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math|ins|del"
-	var block_tags_b = "p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math"
+
+   // ---------------------------------------------------------------
+   // Guillaume Filion edit: the Python markdown interpreter converts
+   // block tags, so I remove them for compliance.
+	//var block_tags_a = "p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math|ins|del"
+	//var block_tags_b = "p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math"
+	var block_tags_a = ""
+	var block_tags_b = ""
+   // ---------------------------------------------------------------
 
 	// First, look for nested blocks, e.g.:
 	//   <div>
@@ -241,7 +251,13 @@ var _HashHTMLBlocks = function(text) {
 		)						// attacklab: there are sentinel newlines at end of document
 		/gm,function(){...}};
 	*/
-	text = text.replace(/^(<(p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math|ins|del)\b[^\r]*?\n<\/\2>[ \t]*(?=\n+))/gm,hashElement);
+
+   // ---------------------------------------------------------------
+   // Guillaume Filion edit: the Python markdown interpreter converts
+   // block tags, so I remove them for compliance.
+	// text = text.replace(/^(<(p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math|ins|del)\b[^\r]*?\n<\/\2>[ \t]*(?=\n+))/gm,hashElement);
+   // ---------------------------------------------------------------
+
 
 	//
 	// Now match more liberally, simply from `\n<tag>` to `</tag>\n`
@@ -261,7 +277,12 @@ var _HashHTMLBlocks = function(text) {
 		)						// attacklab: there are sentinel newlines at end of document
 		/gm,function(){...}};
 	*/
-	text = text.replace(/^(<(p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math)\b[^\r]*?.*<\/\2>[ \t]*(?=\n+)\n)/gm,hashElement);
+
+   // ---------------------------------------------------------------
+   // Guillaume Filion edit: the Python markdown interpreter converts
+   // block tags, so I remove them for compliance.
+	//text = text.replace(/^(<(p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math)\b[^\r]*?.*<\/\2>[ \t]*(?=\n+)\n)/gm,hashElement);
+   // ---------------------------------------------------------------
 
 	// Special case just for <hr />. It was easier to make a special case than
 	// to make the other regex more complicated.  
