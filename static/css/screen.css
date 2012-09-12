@@ -33,7 +33,7 @@ h4 {
 
 .ontheleft {
   float: left;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 a:link { color: #f00; text-decoration: none; }
@@ -82,7 +82,7 @@ a.small_link {
 
 #top_banner {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   background: white;
   top: 0px;
   height: 73px;
