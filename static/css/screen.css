@@ -94,23 +94,34 @@ a.small_link {
 }
 
 #outer {
-  overflow: hidden;
+  /*overflow: hidden;*/
   min-width: 800px;
 }
 
+/*
 .main_column {
   padding-bottom: 32767px;
   margin-bottom: -32767px;
 }
+*/
 
 #left_column {
+  /* tag: added */
+  position: absolute;
+  top: 91px;
+  left: 0px;
+  right 80%;
+  padding-left: 8%;
+  padding-right: 28%;
+  /*
   float: left;
   width: 62%;
-  min-width: 600px;
-  height: 100%;
   padding-top: 80px;
   padding-left: 8%;
   padding-right: 10%;
+  */
+  min-width: 600px;
+  /* height: 100%; */
 }
 
 #right_column {
@@ -119,6 +130,7 @@ a.small_link {
   left: 80%;
   width: 20%;
   min-width: 200px;
+  height: 100%;
   text-align: center;
   color: white;
   background-color: #f00;

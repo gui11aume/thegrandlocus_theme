@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 
 {% block description %}
-    <meta name="robots" content="noarchive">
     <meta name="description"
         content="Guillaume Filion's blog | The Grand Locus - Life for Statistical Sciences" />
-    <meta name="google-site-verification" content="WSYOkQj9p1xQC75jyd5iFQLtd8Q1X-EpoH56yBup9vc" />
 {% endblock %}
 
-{% block title %}Guillaume Filion's blog | The Grand Locus{% endblock %}
+{% block title %}The Grand Locus{% endblock %}
 
 {% block head %}
     <link rel="stylesheet" type="text/css" media="screen"
@@ -44,13 +42,10 @@
         href="/feeds/atom.xml" />
 {% endblock %}
 
-{% block social_networks %}
-      <div id="social_networks">
-        <a href="/feeds/atom.xml"><img id="rssicon" src="/thegrandlocus_theme/static/images/rss.png"></a><br/>
-      </div>
-{% endblock %}
-
 {% block google-analytics %}
+    {# Google site verification for the blog (to prove ownership). #}
+    <meta name="google-site-verification" content="WSYOkQj9p1xQC75jyd5iFQLtd8Q1X-EpoH56yBup9vc" />
+    {# Google analytics for the blog. #}
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33456727-1']);
@@ -67,6 +62,13 @@
 {% endblock %}
 
 {% block slogan %}Life for statistical sciences{% endblock %}
+
+{% block social_networks %}
+      <div id="social_networks">
+        <a href="/feeds/atom.xml"><img id="rssicon" src="/thegrandlocus_theme/static/images/rss.png"></a><br/>
+      </div>
+{% endblock %}
+
 
 {% block section %}
         <div id="section" title="#theblog"></div>
