@@ -50,7 +50,8 @@
   <br />
   <span class="post-format">{{post.rendered|safe}}</span>
 
-
+  <br />
+  <br />
   <g:plus href="https://plus.google.com/102441667247494916086" rel="author"></g:plus>
   <br />
   <br />
@@ -63,11 +64,11 @@
 
   <p id="prev_next">
   {% if prev %}
-    <a id="prev" href="{{config.url_prefix}}{{prev.path}}">&lt; Previous Post</a>
+    &laquo; <a id="prev" href="{{config.url_prefix}}{{prev.path}}">Previous Post</a>
   {% endif %}
   {% if prev and next %} | {% endif %}
   {% if next %}
-    <a id="next" href="{{config.url_prefix}}{{next.path}}">Next Post &gt;</a>
+    <a id="next" href="{{config.url_prefix}}{{next.path}}">Next Post</a> &raquo;
   {% endif %}
   </p>
 

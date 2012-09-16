@@ -37,7 +37,7 @@ h4 {
 }
 
 a:link { color: #f00; text-decoration: none; }
-a:visited {color: #f00; text-decoration: none; }
+a:visited { color: #f00; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 a.silent_link {
@@ -49,8 +49,11 @@ h2 a.silent_link {
   text-decoration: none;
 }
 
-h2 a.dark_link:link { color: #f00; }
-h2 a.dark_link:hover { color: #c00; text-decoration: none; }
+a.grey_link { font-weight: bold; color: #777; }
+a.grey_link:hover { color: #c00; text-decoration: none; }
+
+a.dark_link:link { color: #f00; }
+a.dark_link:hover { color: #c00; text-decoration: none; }
 
 a.navigation_link {
   text-decoration: none;
@@ -93,35 +96,14 @@ a.small_link {
   border-bottom: 2px solid #f00;
 }
 
-#outer {
-  /*overflow: hidden;*/
-  min-width: 800px;
-}
-
-/*
-.main_column {
-  padding-bottom: 32767px;
-  margin-bottom: -32767px;
-}
-*/
-
 #left_column {
   /* tag: added */
   position: absolute;
   top: 91px;
   left: 0px;
-  right 80%;
-  padding-left: 8%;
-  padding-right: 28%;
-  /*
-  float: left;
-  width: 62%;
-  padding-top: 80px;
-  padding-left: 8%;
-  padding-right: 10%;
-  */
-  min-width: 600px;
-  /* height: 100%; */
+  width: 64%;
+  padding-left: 6%;
+  padding-right: 8%;
 }
 
 #right_column {
@@ -139,7 +121,6 @@ a.small_link {
 #bottom_space {
   float: left;
   clear: both;
-  width: 100%;
   height: 100px;
 }
 
