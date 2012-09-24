@@ -15,23 +15,26 @@
   <p id="hard_parts_info"></p>
   <br />
   <h2 id="post_title">{{post.title|escape}}</h2>
+
   <p class="post-info">
-    <span class="date">&#8226; {{post.published_tz|date:config.date_format}} &#8226;</span>
+
+  <span itemscope itemtype="http://data-vocabulary.org/Person">
+    By <a class="grey_link" rel="author" href="https://plus.google.com/102441667247494916086"><span itemprop="name">Guillaume
+    Filion</span></a></span>,
+  filed under
+  {% for tag in post.tag_pairs %}
+    <a class="grey_link" href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% else %}.{% endif %}
+  {% endfor %}
+  <br/ >
+  <br/ >
+  <span class="date">&#8226; {{post.published_tz|date:config.date_format}} &#8226;</span>
+
   </p>
+
   <br />
   <span class="post-format">{{post.rendered|safe}}</span>
 
   <br />
-  <br />
-  <g:plus href="https://plus.google.com/102441667247494916086" rel="author"></g:plus>
-  <br />
-  <br />
-  {% if post.tags %}
-    Filed under
-    {% for tag in post.tag_pairs %}
-      <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
-    {% endfor %}
-  {% endif %}
 
   {# Previous/Next #}
   <p id="prev_next">

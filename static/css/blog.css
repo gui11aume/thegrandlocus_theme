@@ -71,7 +71,7 @@
 }
 
 /* Post formatting. */
-.post-info {
+#author, .post-info {
   text-align: center;
 }
 

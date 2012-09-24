@@ -24,15 +24,29 @@ l Sciences" />
     <hr style="border:0px; color:black; background-color:black; width:70%; height:1px;"/>
   </p>
   <br />
+
   {% for post in posts %}
     <h2><a class="dark_link" href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h2>
+
     <p class="post-info">
-      <span class="date">&#8226; {{post.published_tz|date:config.date_format}} &#8226;</span>
+
+    <span itemscope itemtype="http://data-vocabulary.org/Person">
+      By <a class="grey_link" rel="author" href="https://plus.google.com/102441667247494916086"><span itemprop="name">Guillaume
+      Filion</span></a></span>,
+    filed under
+    {% for tag in post.tag_pairs %}
+      <a class="grey_link" href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% else %}.{% endif %}
+    {% endfor %}
+    <br/ >
+    <br/ >
+    <span class="date">&#8226; {{post.published_tz|date:config.date_format}} &#8226;</span>
+
     </p>
-    <br />
-    <span class="post-format">{{post.summary|safe}}</span>
 
     <br />
+    <span class="post-format">{{post.summary|safe}}</span>
+    <br />
+
     <div class="postmeta">
     <a class="grey_link" href="{{config.url_prefix}}{{post.path}}">Read more &raquo;</a> | 
     {% if config.disqus_forum %}
@@ -41,6 +55,7 @@ l Sciences" />
     </div>
     <br /> 
     <br /> 
+    <br />
     <br />
   {% endfor %}
 
