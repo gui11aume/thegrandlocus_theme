@@ -7,7 +7,6 @@
     <meta name="description"
         content="{{post.title|escape}} | {% if post.tags %}Filed under {% for tag in post.tag_pairs %} {{tag.0|escape}}{% if not forloop.last %},{% endif %} {% endfor %} {% endif %}" />
     <meta name="google-site-verification" content="WSYOkQj9p1xQC75jyd5iFQLtd8Q1X-EpoH56yBup9vc" />
-    <link rel="author" href="https://plus.google.com/102441667247494916086" />
 {% endblock %}
 
 
@@ -19,7 +18,7 @@
   <p class="post-info">
 
   <span itemscope itemtype="http://data-vocabulary.org/Person">
-    By <a class="grey_link" rel="author" href="https://plus.google.com/102441667247494916086"><span itemprop="name">Guillaume
+    By <a class="url fn n grey_link" href="https://plus.google.com/102441667247494916086?rel=author"><span itemprop="name">Guillaume
     Filion</span></a></span>,
   filed under
   {% for tag in post.tag_pairs %}
@@ -33,7 +32,6 @@
 
   <br />
   <span class="post-format">{{post.rendered|safe}}</span>
-
   <br />
 
   {# Previous/Next #}

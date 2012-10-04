@@ -31,7 +31,7 @@ l Sciences" />
     <p class="post-info">
 
     <span itemscope itemtype="http://data-vocabulary.org/Person">
-      By <a class="grey_link" rel="author" href="https://plus.google.com/102441667247494916086"><span itemprop="name">Guillaume
+      By <a class="url fn n grey_link" rel="author" href="https://plus.google.com/102441667247494916086"><span itemprop="name">Guillaume
       Filion</span></a></span>,
     filed under
     {% for tag in post.tag_pairs %}
@@ -63,7 +63,7 @@ l Sciences" />
   {% if prev_page %}
     &laquo; <a id="prev" href="{{config.url_prefix}}{{prev_page}}">Newer</a>
   {% endif %}
-  {% if prev and next %} | {% endif %}
+  {% if prev_page and next_page %} | {% endif %}
   {% if next_page %}
     <a id="next" href="{{config.url_prefix}}{{next_page}}">Older</a> &raquo;
   {% endif %}
