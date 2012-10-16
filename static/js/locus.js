@@ -70,7 +70,7 @@ function format_theme_style() {
   $('#rssicon').qtip(
     { id: 'rss', /* #ui-tooltip-rss */
       prerender: true,
-      content: 'Link to RSS feeds of the blog',
+      content: '... in a reader',
       position: {
         my: 'left center',
         at: 'right center'
@@ -83,6 +83,23 @@ function format_theme_style() {
       }
     }
   );
+  $('#mailicon').qtip(
+    { id: 'mail', /* #ui-tooltip-rss */
+      prerender: true,
+      content: '... by email',
+      position: {
+        my: 'left center',
+        at: 'right center'
+      },
+      style: {
+        classes: 'ui-tooltip-bootstrap ui-tooltip-shadow'
+      },
+      show: {
+        effect: function(offset) {$(this).show(100); }
+      }
+    }
+  );
+
 
 }
 
