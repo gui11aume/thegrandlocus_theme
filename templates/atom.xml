@@ -17,19 +17,22 @@
         <title>{{post.title|escape}}</title>
         <link rel="alternate" type="text/html" href="http://{{config.host}}{{config.url_prefix}}{{post.path}}" />
         <id>tag:{{config.host}},{{post.updated|date:"Y-m-d"}}:post:{{post.key.id}}</id>
-        <updated>{{post.updated_tz|date:"Y-m-d\TH:i:s\Z"}}</updated>
-        <published>{{post.published_tz|date:"Y-m-d\TH:i:s\Z"}}</published>
+	<updated>{{post.published_tz|date:"Y-m-d\TH:i:s\Z"}}</updated>
+	<published>{{post.published_tz|date:"Y-m-d\TH:i:s\Z"}}</published>
         <author>
             <name>{{config.author_name}}</name>
             <uri>http://{{config.host}}{{config.url_prefix}}/</uri>
         </author>
         <content type="html">
-&lt;style type=&quot;text/css&quot;&gt;
-code { display: inline; padding: 5px 0 0 0; }
-sup { vertical-align: super; }
-sub { vertical-align: sub; }
-&lt;/style&gt;
-            {{post.rendered|escape}}
+          &lt;style type=&quot;text/css&quot;&gt;
+          code { display: inline; padding: 5px 0 0 0; }
+          sup { vertical-align: super; }
+          sub { vertical-align: sub; }
+          &lt;/style&gt;
+          {{post.summary|escape}}
+          &lt;br /&gt;
+	  Read more: &lt;a href=&quot;http://{{config.host}}{{config.url_prefix}}{{post.path}}&quot;&gt;{{post.title|escape}}&lt;/a&gt;
+          &lt;br /&gt;
         </content>
     </entry>
     {% endfor %}
