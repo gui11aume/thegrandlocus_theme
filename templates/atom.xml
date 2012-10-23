@@ -12,13 +12,13 @@
     <generator uri="http://{{config.host}}{{config.url_prefix}}/" version="1.0">
         gui11aume's fork of Bloggart
     </generator>
-    {% for post in posts %}
+    {% for entry in entries %}
     <entry>
-        <title>{{post.title|escape}}</title>
-        <link rel="alternate" type="text/html" href="http://{{config.host}}{{config.url_prefix}}{{post.path}}" />
-        <id>tag:{{config.host}},{{post.updated|date:"Y-m-d"}}:post:{{post.key.id}}</id>
-	<updated>{{post.published_tz|date:"Y-m-d\TH:i:s\Z"}}</updated>
-	<published>{{post.published_tz|date:"Y-m-d\TH:i:s\Z"}}</published>
+        <title>{{entry.title|escape}}</title>
+        <link rel="alternate" type="text/html" href="http://{{config.host}}{{config.url_prefix}}{{entry.postpath}}" />
+        <id>tag:{{config.host}},{{entry.published|date:"Y-m-d"}}:post:{{entry.hash}}</id>
+	<updated>{{entry.published_tz|date:"Y-m-d\TH:i:s\Z"}}</updated>
+	<published>{{entry.published_tz|date:"Y-m-d\TH:i:s\Z"}}</published>
         <author>
             <name>{{config.author_name}}</name>
             <uri>http://{{config.host}}{{config.url_prefix}}/</uri>
@@ -29,9 +29,9 @@
           sup { vertical-align: super; }
           sub { vertical-align: sub; }
           &lt;/style&gt;
-          {{post.summary|escape}}
+          {{entry.body|escape}}
           &lt;br /&gt;
-	  Read more: &lt;a href=&quot;http://{{config.host}}{{config.url_prefix}}{{post.path}}&quot;&gt;{{post.title|escape}}&lt;/a&gt;
+	  Read more: &lt;a href=&quot;http://{{config.host}}{{config.url_prefix}}{{entry.postpath}}&quot;&gt;{{entry.title|escape}}&lt;/a&gt;
           &lt;br /&gt;
         </content>
     </entry>

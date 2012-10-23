@@ -12,6 +12,10 @@
   left: 10px;
 }
 
+#subscribe h3 {
+  margin-bottom: 8px;
+}
+
 #plusone {
   float: left;
   width: 75px;
